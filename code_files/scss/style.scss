@@ -10,11 +10,12 @@
 }
 body{
     font-family: "San-serif","DM Sans";
-    // overflow-x: hidden;
     width: 100%;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 header{
@@ -558,9 +559,7 @@ gap: 25px;
 
 // Hamburger and nav
 @include media($mobile){
-    html{
-        scroll-behavior: smooth;
-    }
+
     body{
         position: relative;
         overflow-x: hidden;
@@ -730,9 +729,10 @@ gap: 25px;
         font-size: 2.3rem;
     }
     button{
-        width: 100%;
+        width: 50%;
         margin: 10px auto;
     }
+   
 }
 .win{
     background-size: 150% 100%;
@@ -787,6 +787,9 @@ footer{
     .desc{
         background: none;
         text-align: center;
+        button{
+            width: 100%;
+        }
     }   
     .know{
         background: none;

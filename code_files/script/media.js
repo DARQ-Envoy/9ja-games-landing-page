@@ -1,4 +1,4 @@
-// const mobile = matchMedia("(max-width: 900px)");
+const mobile = matchMedia("(max-width: 900px)");
 const navOptions = document.querySelector("#nav-options");
 const openNav = document.querySelector("#open-nav");
 const closeNav = document.querySelector("#close-nav");

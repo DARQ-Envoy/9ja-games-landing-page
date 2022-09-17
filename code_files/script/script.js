@@ -1,10 +1,7 @@
 const search = document.querySelector("#search");
 const filterGames = document.querySelector("#filter-games");
 const allGames = document.querySelector("#all-games");
-const mobile = matchMedia("(max-width: 900px)");
 let timeOut;
-// let gamesDisplayed;
-// let calls = 0;
 let games;
 let no = 0;
 const notFound = document.querySelector(".n-found");
@@ -55,10 +52,7 @@ groups.addEventListener("input",(e)=>{
 topics.addEventListener("input",(e)=>{
     gameFilter(e.target)
 })
-// search.addEventListener("focus",(e)=>{
-//     inputStatus(e.target)
 
-// });
 
 
 function settingGames(){
@@ -90,7 +84,6 @@ function gameFilter(element){
     games = allGames.querySelectorAll(".game");
 
     if(element == filterGames){
-        // calls += 1;
         allGames.classList.add("load");
         gamesArray = Array.from(games);
         gamesArray.forEach((game)=>{
@@ -116,7 +109,6 @@ function gameFilter(element){
         }, 2000)
     }
     else if(element == groups || element == topics){
-        debugger;
         filterType(element);
     }
 
@@ -187,26 +179,6 @@ function filterType(element){
             }
 
     }
-
-        // else{
-        //         allGames.innerHTML=``;
-
-        //                 }
-        // console.log(element.value);
-        // console.log(games)
-        // games.forEach( obj =>{
-        //    text = obj.querySelector(`#g-${term}`.toLowerCase()).textContent
-        //    console.log(text)
-        // if(text === element.value)
-        //         { allGames.appendChild(obj)
-        //       }
-        //     else{   return      };
-
-        //             });
-        // console.log(Boolean(allGames.innerHTML))
-        // if(!allGames.innerHTML){
-        //     dNone();
-        //             }
 
                 }
     else{
