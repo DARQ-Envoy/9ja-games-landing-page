@@ -1,0 +1,22 @@
+$mobile: '(max-width: 900px)';
+$mini: '(max-width: 750px)';
+$tablet: '(max-width: 1200px)';
+$big-mobile: '(max-width: 980px)';
+
+
+@mixin media($size){
+    @media screen and #{$size} {
+        @content;   
+    }
+    // @if($size == $mini){
+    //     @media screen and #{$size} {
+    //         @content;   
+    //     }
+    // }
+
+};
+// @mixin hide{
+// @media screen and (max-width: 650px) {
+//     @content
+// }
+// }

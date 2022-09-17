@@ -1,0 +1,214 @@
+$head-orange: #fdc800;
+$head-text-black:#212529;
+$head-text-blue:#002147;
+$light-blue-bg: #f0f4f9;
+$head-orange-dark: #e9b808;
+$white: #fff;
+$gray:#757575;
+$border-gray: #bdbdbd;
+
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+
+.auth{
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: $head-orange;
+    transition: all ease 1s;
+    a{
+        display: block;
+        text-align: center;
+        padding: 12px 19px;
+        text-decoration: none;
+        color: $head-text-blue;
+        font-weight: bold;
+        transition: all ease 1s;
+    }
+}
+
+
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 15px;
+    img{
+        height: 16px;
+        width: 16px;
+    }
+}
+
+
+@mixin set-button-hover($bg-color){
+    @if($bg-color == $head-orange){
+        background-color:$head-text-blue;
+    }
+    @else if($bg-color == $white){
+        background-color: $head-text-blue;
+    }
+    // color: $white;
+ 
+}
+
+$spacing : (1,2,3,4,5,6,7,8,9);
+
+@each $space in $spacing{
+    .p-#{$space}{
+        padding: #{$space * 10}px;
+    }
+    .py-#{$space}{
+        padding: #{$space * 10}px 0;
+    }
+    .px-#{$space}{
+        padding:0 #{$space * 10}px;
+    }
+    .ps-#{$space}{
+        padding-left: #{$space * 10}px;
+    }
+    .pe-#{$space}{
+        padding-right:#{$space * 10}px;
+    }
+    .pt-#{$space}{
+        padding-top: #{$space * 10}px;
+    }
+    .pb-#{$space}{
+        padding-bottom:#{$space * 10}px;
+    }
+    .m-#{$space}{
+        margin: #{$space * 10}px;
+    }
+    .me-#{$space}{
+        margin-right: #{$space * 10}px;
+    }
+    .ms-#{$space}{
+        margin-l: #{$space * 10}px;
+    }
+    .mb-#{$space}{
+        margin-bottom: #{$space * 10}px;
+    }
+    .mt-#{$space}{
+        margin-top: #{$space * 10}px;
+    }
+    .my-#{$space}{
+        margin: #{$space * 10}px 0;
+    }
+    .mx-#{$space}{
+        margin:0 #{$space * 10}px;
+    }
+    .sc-#{$space}{
+        transform: scale(#{0.1 * $space} + 1 );
+    }
+    .scx-#{$space}{
+        transform: scaleX(#{0.1 * $space} + 1 );
+    }
+    .scy-#{$space}{
+        transform: scaleY(#{0.1 * $space} + 1 );
+    }
+    @if($space == 10){
+        .sc-#{$space}{
+            transform: scale(#{0.1 * $space} + 1);
+        }
+        .scx-#{$space}{
+            transform: scaleX(#{0.1 * $space} + 1);
+        }
+        .scy-#{$space}{
+            transform: scaleY(#{0.1 * $space} + 1);
+        }
+    }
+
+}
+@mixin searchfield($e-width){
+        height: 44px;
+        width: 0%;
+        min-width: 44px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        color: $head-text-blue;
+        background: url("/images/iconmonstr-magnifier-2.svg") no-repeat;
+        background-position: 10px 50%;
+        background-color: white;
+        border: 1px solid $head-text-blue;
+        transition: width ease 1s;
+        padding:0 0 0 41px;
+        &:hover, &:focus{
+            width: $e-width;
+            padding-left: 40px;
+    }
+        &:focus{
+            outline: 2px solid #b3cbfb;
+            background-image: none;
+            padding:0 10px ;
+        }
+
+}
+
+.over-hid{
+    overflow-y: hidden;
+}
+.over-show{
+    overflow-y: scroll;
+}
+.over-nav-body-hid{
+    overflow: hidden;
+}
+
+
+
+
+@mixin Authenticate($my-color){
+        border: 1px solid transparent;
+        font-size: 1rem;
+        border-radius: 5px;
+        background-color: $head-orange;
+        transition: all ease 1s;
+        a{
+            display: block;
+            text-align: center;
+            padding: 12px 19px;
+            text-decoration: none;
+            color: $my-color;
+            font-weight: bold;
+            transition: all ease 1s;
+        }
+}
+
+
+
+
+// hamburger
+// .hamburger{
+//     padding: 5px;
+//     order: 3;
+//     margin: 0 20px;
+
+//     span{
+//         height: 2px;
+//         width: 25px;
+//         background-color: $head-orange;
+//         display: block;
+//         margin-top: 5px;
+//         transition: all 500ms ease;
+//     }
+
+// span:first-child{
+//     transform: translateY(7px) rotate(45deg);
+// }
+
+//     span:nth-child(2){
+//     transform: rotate(45deg);
+//     background-color: $head-text-blue;
+//     // z-index: -1;
+
+//             }
+
+//     span:last-child(){
+// transform: translateY(-7px) rotate(135deg);
+// // z-index: ;
+//     }
+// }
