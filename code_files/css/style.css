@@ -1299,6 +1299,7 @@ footer {
   }
   body {
     position: relative;
+    overflow-x: hidden;
   }
   .over-lay {
     position: absolute;
@@ -1437,12 +1438,20 @@ footer {
     background-position: 55% 0;
     width: 100%;
     padding: 10px 5% 20px 30px;
+    height: fit-content;
   }
   .desc h3 {
     font-size: 1.2rem;
   }
   .desc h1 {
     font-size: 2.3rem;
+  }
+  .desc button {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .win {
+    background-size: 150% 100%;
   }
   .second-section .filter {
     flex-direction: column;
