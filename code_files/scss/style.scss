@@ -59,7 +59,6 @@ header{
     }
 
     nav{
-        // max-width: 100%;
         background-color: $light-blue-bg;
         display: flex;
         align-items: center;
@@ -222,7 +221,6 @@ article{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // gap: 0 20px;
         padding: 10px 15px;
         .Gfield{
             @include searchfield(40%);
@@ -234,7 +232,6 @@ article{
             flex-wrap: wrap;
             gap: 10px 10px;
             select{
-                // margin: 0 10px;
                 padding: 10px 15px;
                 font-size: 1rem;
                 font-weight: bold;
@@ -272,12 +269,10 @@ article{
             transition: display 2s ease;
             img{
                 width: 100%;
-                // min-height: 290px;
                 height: 65%;
             }
             div{
                 background-color: rgb(236, 235, 235);
-                // min-height: min-content;
                 height: auto;
                 padding: 10px;
                 border-radius: 5px;
@@ -298,7 +293,6 @@ article{
                 }
             }
             &:hover{
-                // background-color: red;
                 transform: scale(1.03);
             }
         }
@@ -332,7 +326,6 @@ article{
             animation: loading 800ms linear infinite;
             pointer-events: none;
             opacity: 0;
-            // transition: opacity 1s ease;    
                         }
     }
     .load{
@@ -372,7 +365,6 @@ article{
 }
 .content{
     margin: 70px 0 0 45%;
-    // transform: translateY(-50%);
     h5{
         font-size: 1rem;
         color: $head-orange;  
@@ -559,7 +551,6 @@ gap: 25px;
 
 // Hamburger and nav
 @include media($mobile){
-
     body{
         position: relative;
         overflow-x: hidden;
@@ -580,7 +571,7 @@ gap: 25px;
     
     }
     .over-lay-show{
-        top: -10%;
+        top: -5%;
         height: 200vh;
         width: 200vh;
     }
@@ -595,7 +586,7 @@ gap: 25px;
             background-color: $head-orange;
             display: block;
             margin-top: 5px;
-            transition: all 500ms ease;
+            transition: all 200ms linear;
 
             &:nth-child(2){
                 background-color: $head-text-blue;
@@ -701,12 +692,10 @@ gap: 25px;
             order: 1;
             width: 44px;
             &:hover, &:focus{
-            // max-width: unset;
                 width: 100%;
             }
         }
         .nav-small-show{
-            // top: -100%;
             transform: translateY(0);
             right: 0;
             margin-right: 0.5px;
@@ -793,8 +782,6 @@ footer{
     }   
     .know{
         background: none;
-        // background-position: 80% 0;
-        // background-size: 140% 100%;
     }
     .content{
         text-align: center;
